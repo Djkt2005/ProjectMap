@@ -48,7 +48,7 @@ document.getElementById('addContactButton').addEventListener('click', () => {
 
 // Generate alert link to contact.html
 function generateLiveLocationLink(userId) {
-  return `contact.html?user=${userId}`;
+  return `https://ProjectMap.djkt2005.repl.co/contact.html?user=${userId}`;
 }
 
 // Function to send email via EmailJS
