@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Alert System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@latest/dist/email.min.js"></script>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <h1>Emergency Alert System</h1>
+  <div id="map"></div>
+  
+  <div class="contact-form">
+    <h2>Add Emergency Contact</h2>
+    <input type="email" id="contact-email" placeholder="Enter contact email" required>
+    <button id="addContactButton">Add Contact</button>
+  </div>
+  
+  <ul id="contactList"></ul>
+  
+  <button id="sendAlertButton">Send Alert</button>
+
+  <!-- Firebase and app scripts -->
+  <script type="module" src="user-script.js"></script>
+</body>
+</html>

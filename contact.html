@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Contact View</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <h1>Emergency Contact View</h1>
+  <div id="map"></div>
+  <div id="info">
+    <h2>Live Updates</h2>
+    <p><strong>User's Location:</strong> <span id="userLocation">Fetching...</span></p>
+    <p><strong>Your Location:</strong> <span id="contactLocation">Fetching...</span></p>
+  </div>
+  <script type="module" src="contact-script.js"></script>
+</body>
+</html>
